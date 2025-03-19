@@ -1,0 +1,5 @@
+hw6_pcode.txt
+Author: Pablo Sanchez
+Date: March 19, 2025
+COSC 3750, Homework 6
+Pseudocode for wytar
