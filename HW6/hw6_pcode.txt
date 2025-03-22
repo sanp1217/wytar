@@ -3,3 +3,23 @@ Author: Pablo Sanchez
 Date: March 19, 2025
 COSC 3750, Homework 6
 Pseudocode for wytar
+
+if create archive
+  for each filesystem object
+    get the metadata for the file object
+    fill tar header with metadata
+    write header to the tar archive
+    if file object is regular file
+      get file data
+      write file data to tar archive
+    close file
+  terminate archive with two 512 byte blocks of 0 bytes
+
+if extract archive
+  while two consecutive empty blocks have not been found
+    open tar archive for reading
+    read header to extract filename and size
+    create file
+    read data from archive for that file
+    write data to that file to the made file
+    close file
